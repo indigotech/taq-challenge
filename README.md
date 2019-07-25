@@ -30,6 +30,7 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 - Demonstrar algum comportamento responsivo (desktop vs. mobile) com apenas um breaking point: 768px.
 - Utilização de conceitos de atomic design.
 - Comportamento adequado do botão "back" do browser ao voltar do detalhe para a listagem.
+
 **Importante:** de tentar contemplar os itens de bônus, tenha em mente que não estamos avaliando a perfeição, e sim o equilíbrio entre objetivo principal, esforço esperado (8~12h) e a compreensão de conceitos. Os itens desta seção devem ser utilizados para facilitar o desenvolvimento e não trazer mais complexidade ao desafio.
 
 # Critérios de avaliação
