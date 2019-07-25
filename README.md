@@ -2,7 +2,7 @@
 A Taqtile é uma empresa que contribui para o desenvolvimento de estratégias mobile para centenas de marcas relevantes no mercado brasileiro e internacional. Isto só é possível pois todos colaboradores carregavam um senso crítico e uma preocupação de aprimoramento constante. Nosso objetivo é sempre manter o senso de qualidade, contando com pessoas totalmente alinhadas com nosso dever para com os clientes internos e externos. 
 
 # O desafio
-A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graphql), conforme a seção "Instruções", com esforço estimado de 8h~12h. O prazo pode ser estendido até 1 semana a partir do fork, mas também aumentará o rigor com que o código será avaliado.
+A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graphql), conforme a seção "Instruções", com esforço estimado de 12h~16h. O prazo pode ser estendido até 1 semana a partir do fork, mas também aumentará o rigor com que o código será avaliado.
 
 **Dica:** tente atingir os objetivos básicos para depois partir para a seção bônus.
 
@@ -12,10 +12,18 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 3. Crie uma branch `challenge/pokemon`. 
 4. Crie um projeto [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html#create-react-app) nesta branch.
 5. Consuma a API https://graphql-pokemon.now.sh
-6. Desenvolva a listagem de pokemons (em forma de lista ou cards). Como exibição padrão, a listagem deve trazer 50 pokemons com as seguintes informações: imagem do pokemon; número; nome do pokemon.
-7. Ao clicar em um dos pokemons, uma tela contendo os detalhes deverá ser apresentada. Deve conter: Imagem, Nome do pokemon; todos os ataques especiais (apenas o nome).
+6. Desenvolva a listagem de pokemons (em forma de lista ou cards). Como exibição padrão, a listagem deve trazer 50 pokemons com as seguintes informações:
+   - imagem do pokemon;
+   - número;
+   - nome do pokemon.
+ 
+7. Ao clicar em um dos pokemons, uma tela contendo os detalhes deverá ser apresentada. Deve conter:
+   - imagem do pokemon;
+   - nome do pokemon;
+   - todos os ataques especiais (apenas o nome).
+ 
 8. A tela de detalhes deverá possuir um botão ou link para retornar a listagem.
-9. Ao concluir seu desafio, faça um pull request para a branch `master` e notifique os membeos da Taqtile para realizar o code review.
+9. Ao concluir seu desafio, faça um pull request para a branch `master` e notifique os membros da Taqtile para realizar o code review.
 
 # Regras
 - Você pode discutir este exercícios com outras pessoas, mas não peça para ninguém escrever ou revisar seu código.
@@ -33,7 +41,7 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 - Utilização de conceitos de atomic design.
 - Comportamento adequado do botão "back" do browser ao voltar do detalhe para a listagem.
 
-**Importante:** de tentar contemplar os itens de bônus, tenha em mente que não estamos avaliando a perfeição, e sim o equilíbrio entre objetivo principal, esforço esperado (8~12h) e a compreensão de conceitos. Os itens desta seção devem ser utilizados para facilitar o desenvolvimento e não trazer mais complexidade ao desafio.
+**Importante:** de tentar contemplar os itens de bônus, tenha em mente que não estamos avaliando a perfeição, e sim o equilíbrio entre objetivo principal, esforço esperado (12~16h) e a compreensão de conceitos. Os itens desta seção devem ser utilizados para facilitar o desenvolvimento e não trazer mais complexidade ao desafio.
 
 # Critérios de avaliação
 - Não esperamos que você seja super familiarizado com React, Typescript, ou nada que utilizamos como stack padrão em nossa empresa.
