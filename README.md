@@ -5,14 +5,16 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 **Dica:** tente atingir os objetivos básicos para depois partir para a seção bônus.
 
 # Instruções
-1. Faça um fork do repositório https://github.com/indigotech/taq-challenge em uma conta privada.
-2. Adicione 
-2. Crie um projeto [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html#create-react-app).
-2. Consuma a API https://graphql-pokemon.now.sh
-3. Desenvolva a listagem de pokemons (em forma de lista ou cards). Como exibição padrão, a listagem deve trazer 50 pokemons com as seguintes informações: imagem do pokemon; número; nome do pokemon.
-4. Ao clicar em um dos pokemons, uma tela contendo os detalhes deverá ser apresentada. Deve conter: Imagem, Nome do pokemon; todos os ataques especiais (apenas o nome).
-5. A tela de detalhes deverá possuir um botão ou link para retornar a listagem.
-6. Ao concluir seu desafio, faça um pull request para o nosso repositório.
+1. Crie um repositório privado na sua conta do github.
+2. Convide os membros da Taqtile como colaboradores: `emiyake`, `felipewaku`.
+3. Crie uma branch `challenge/pokemon`. 
+4. Crie um projeto [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html#create-react-app) nesta branch.
+5. Consuma a API https://graphql-pokemon.now.sh
+6. Desenvolva a listagem de pokemons (em forma de lista ou cards). Como exibição padrão, a listagem deve trazer 50 pokemons com as seguintes informações: imagem do pokemon; número; nome do pokemon.
+7. Ao clicar em um dos pokemons, uma tela contendo os detalhes deverá ser apresentada. Deve conter: Imagem, Nome do pokemon; todos os ataques especiais (apenas o nome).
+8. A tela de detalhes deverá possuir um botão ou link para retornar a listagem.
+9. Ao concluir seu desafio, faça um pull request para a branch `master` e notifique os membeos da Taqtile para realizar o code review.
+
 # Regras
 - Você pode discutir este exercícios com outras pessoas, mas não peça para ninguém escrever ou revisar seu código.
 - Você pode nos contatar a qualquer momento para tirar suas dúvidas ou para qualquer outra necessidade.
