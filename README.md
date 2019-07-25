@@ -41,6 +41,7 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 - Esperamos que seu código seja limpo, fácil de ser compreendido e testado. Comente seu código mas lembre-se que excesso de comentários também é fonte de poluição.
 - Se você considerar este desafio muito complexo ou se sente travado, sinta-se à vontade em pedir nossa ajuda. Preferimos candidatos que atinjam seu objetivo, mesmo com auxílio, do que simplesmente desistir.
 - Realizaremos o pull de seu branch. Para rodar o sistema, executaremos dois comandos em sequência:
+
 -- `yarn install`
 -- `yarn start`
 -- O sistema deverá ser executado sem nenhum erro no console ou terminal.
