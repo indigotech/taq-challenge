@@ -1,5 +1,6 @@
 # Bem-vindo
 A Taqtile é uma empresa que contribui para o desenvolvimento de estratégias mobile para centenas de marcas relevantes no mercado brasileiro e internacional. Isto só é possível pois todos colaboradores carregavam um senso crítico e uma preocupação de aprimoramento constante. Nosso objetivo é sempre manter o senso de qualidade, contando com pessoas totalmente alinhadas com nosso dever para com os clientes internos e externos. 
+
 # O desafio
 A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graphql), conforme a seção "Instruções", com esforço estimado de 8h~12h. O prazo pode ser estendido até 1 semana a partir do fork, mas também aumentará o rigor com que o código será avaliado.
 **Dica:** tente atingir os objetivos básicos para depois partir para a seção bônus.
@@ -41,17 +42,16 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 - Esperamos que seu código seja limpo, fácil de ser compreendido e testado. Comente seu código mas lembre-se que excesso de comentários também é fonte de poluição.
 - Se você considerar este desafio muito complexo ou se sente travado, sinta-se à vontade em pedir nossa ajuda. Preferimos candidatos que atinjam seu objetivo, mesmo com auxílio, do que simplesmente desistir.
 - Realizaremos o pull de seu branch. Para rodar o sistema, executaremos dois comandos em sequência:
-
--- `yarn install`
--- `yarn start`
--- O sistema deverá ser executado sem nenhum erro no console ou terminal.
+  - `yarn install`
+  - `yarn start`
+  - O sistema deverá ser executado sem nenhum erro no console ou terminal.
 
 # FAQ
 ### Posso usar Next, Gatsby ou outro framework?
 Para este projeto, gostaríamos que utilizasse a biblioteca da forma mais limpa, ou seja, através do cli `create-react-app`.
 
 ### Posso utilizar Typescript para escrever meu código?
-Sim
+Sim.
 
 ### Como devo organizar as pastas e nomear meus arquivos?
 Não há uma regra para isto. Apenas tenha em mente que esta separação deve seguir alguma regra consistente.
