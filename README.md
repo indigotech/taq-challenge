@@ -3,6 +3,7 @@ A Taqtile é uma empresa que contribui para o desenvolvimento de estratégias mo
 
 # O desafio
 A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graphql), conforme a seção "Instruções", com esforço estimado de 8h~12h. O prazo pode ser estendido até 1 semana a partir do fork, mas também aumentará o rigor com que o código será avaliado.
+
 **Dica:** tente atingir os objetivos básicos para depois partir para a seção bônus.
 
 # Instruções
