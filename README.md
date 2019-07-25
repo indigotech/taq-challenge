@@ -23,7 +23,7 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 - Você pode usar o Google para qualquer necessidade de consulta.
 - Você pode usar qualquer biblioteca que julgar necessário.
 - Não será necessário implementar nenhum mecanismo de paginação.
-- Para exibição da tela de detalhes não é necessário implementar nenhum mecanismo de rota. Mas também não há problemas de adotar um componente para gerenciamento de rotas.
+- Para exibição da tela de detalhes não é necessário implementar nenhum mecanismo de rotas. Mas também não há problemas de adotar um pacote para este fim. No entanto, o detalhe deve ser exibido em uma tela em branco ou sobrepondo a listagem (modal).
 - Não será necessário persistir a posição do scroll da listagem ao retornar do detalhe para a listagem.
 - Realizar commits a cada tarefa concluída. Não faça apenas um commit no final.
 
