@@ -8,11 +8,13 @@ class ListItem extends React.Component {
     displayDetails: false
   };
 
-  showDetails = () => {
+  showDetails = (e) => {
+    e.preventDefault();
     this.setState({ displayDetails: true });
   };
 
-  hideDetails = () => {
+  hideDetails = (e) => {
+    e.preventDefault();
     this.setState({ displayDetails: false });
   };
 
@@ -53,7 +55,6 @@ class ListItem extends React.Component {
 
       @media only screen and (max-width: 768px) {
         display: block;
-        
         position: absolute;
       }
     `;
