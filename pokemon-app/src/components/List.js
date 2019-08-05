@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import ListItem from './ListItem';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
+
+import ListItem from './ListItem';
 
 class List extends React.Component {
   render() {
@@ -14,13 +15,18 @@ class List extends React.Component {
             name
             number
             image
+            attacks {
+              special {
+                name
+              }
+            }
           }
         }
       }
     `;
 
     const Container = styled.section`
-      max-width: 65rem;
+      max-width: 50rem;
       margin: 0 auto;
       margin-bottom: 2rem;
     `;
@@ -28,6 +34,10 @@ class List extends React.Component {
     const Title = styled.h1`
       font-size: 2.5rem;
       text-align: center;
+    `;
+
+    const Pokemon = styled.li`
+      list-style-type: none;
     `;
 
     return (
@@ -41,7 +51,13 @@ class List extends React.Component {
           return (
             <Container>
               <Title>Pokemon List</Title>
-              {pokemonsToRender.map(pokemon => <ListItem key={pokemon.id} pokemon={pokemon} />)}
+              {
+                pokemonsToRender.map(pokemon =>
+                  <Pokemon key={pokemon.id}>
+                    <ListItem pokemon={pokemon} />
+                  </Pokemon>
+                )
+              }
             </Container>
           )
         }}
