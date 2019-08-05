@@ -29,6 +29,10 @@ class List extends React.Component {
       max-width: 50rem;
       margin: 0 auto;
       margin-bottom: 2rem;
+
+      @media only screen and (max-width: 768px) {
+        max-width: 30rem;
+      }
     `;
 
     const Title = styled.h1`

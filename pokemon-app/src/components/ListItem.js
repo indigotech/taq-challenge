@@ -33,9 +33,15 @@ class ListItem extends React.Component {
     })`
       mix-blend-mode: multiply;
       width: 5rem;
+
+      @media only screen and (max-width: 768px) {
+        display: block;
+        margin: 0 auto;
+        width: 7rem;
+      }
     `;
 
-    const PokeInfo = styled.span`
+    const PokeInfo = styled.div`
       display: flex;
       justify-content: space-between;
       margin: 0 auto;
@@ -44,12 +50,23 @@ class ListItem extends React.Component {
     const PokeNumber = styled.span`
       margin-right: .5rem;
       margin-top: 1.5rem;
+
+      @media only screen and (max-width: 768px) {
+        display: block;
+        
+        position: absolute;
+      }
     `;
 
     const PokeName = styled.span`
       font-size: 1.5rem;
       font-weight: bold;
       margin-top: 1rem;
+
+      @media only screen and (max-width: 768px) {
+        display: block;
+        margin: 1rem auto;
+      }
     `;
 
     return(
