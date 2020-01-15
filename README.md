@@ -8,7 +8,7 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 
 # Instruções
 1. Crie um repositório privado na sua conta do github.
-2. Convide os membros da Taqtile como colaboradores: `emiyake`, `felipewaku`.
+2. Convide os membros da Taqtile como colaboradores: `emiyake`, `felipewaku`, `tibawatanabe`.
 3. Crie uma branch `challenge/pokemon`. 
 4. Crie um projeto [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html#create-react-app) nesta branch.
 5. Consuma a API https://graphql-pokemon.now.sh
