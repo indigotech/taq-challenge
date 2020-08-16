@@ -9,18 +9,18 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 # Instruções
 1. Crie um repositório privado na sua conta do github.
 2. Convide os membros da Taqtile como colaboradores: `emiyake`, `felipewaku`, `tibawatanabe`.
-3. Crie uma branch `challenge/pokemon`. 
+3. Crie uma branch `challenge/rickandmorty`. 
 4. Crie um projeto [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html#create-react-app) nesta branch.
-5. Consuma a API https://graphql-pokemon.now.sh
-6. Desenvolva a listagem de pokemons (em forma de lista ou cards). Como exibição padrão, a listagem deve trazer 50 pokemons com as seguintes informações:
-   - imagem do pokemon;
-   - número;
-   - nome do pokemon.
+5. Consuma a API https://rickandmortyapi.com/graphql
+6. Desenvolva a listagem de personagens (em forma de lista ou cards). Como exibição padrão, a listagem deve trazer todos os personagens com as seguintes informações:
+   - imagem do personagem;
+   - status;
+   - nome do personagem.
  
-7. Ao clicar em um dos pokemons, uma tela contendo os detalhes deverá ser apresentada. Deve conter:
-   - imagem do pokemon;
-   - nome do pokemon;
-   - todos os ataques especiais (apenas o nome).
+7. Ao clicar em um dos personagens, uma tela contendo os detalhes deverá ser apresentada. Deve conter:
+   - imagem do personagem;
+   - nome do personagem;
+   - todos os episódios que o mesmo apareceu (apenas o nome).
  
 8. A tela de detalhes deverá possuir um botão ou link para retornar a listagem.
 9. Ao concluir seu desafio, faça um pull request para a branch `master` e notifique os membros da Taqtile para realizar o code review.
