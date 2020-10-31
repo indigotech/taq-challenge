@@ -1,10 +1,11 @@
 import React from "react";
+import ListCharacters from "./components/ListCharacters"
 
 const App = () => {
   return (
-    <div>
-      <p>Bem vindos</p>
-    </div>
+      <div>
+        <ListCharacters />
+      </div>
   );
 };
 
