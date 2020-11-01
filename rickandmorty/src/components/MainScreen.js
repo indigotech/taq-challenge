@@ -6,10 +6,10 @@ import * as S from "./style";
 export const MainScreen = () => {
   return (
     <>
-      <S.Title>
-        The Rick and Morty
-      </S.Title>
       <S.MainWrapper>
+        <S.Title>
+          The Rick and Morty
+        </S.Title>
         <S.ListWrapper>
           <ListCharacters />
         </S.ListWrapper>
