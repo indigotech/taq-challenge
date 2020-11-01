@@ -5,7 +5,7 @@ import { gql, useQuery } from "@apollo/client";
 import * as S from "./style";
 
 export const CharacterScreen = () => {
-  const { characterId } = useParams(); //funcion propia de react para tomar datos de la url
+  const { characterId } = useParams();
 
   const CHARACTER = gql`
     query{
@@ -30,9 +30,14 @@ export const CharacterScreen = () => {
 
   if (error)
     return (
-      <S.MainWrapper>
-        <S.TitleCard>Error: {error.message}</S.TitleCard>
-      </S.MainWrapper>
+      <>
+        <S.StyledLink to={`./`}>
+          <S.HomePage />
+        </S.StyledLink>
+        <S.MainWrapper>
+          <S.TitleCard>Error: {error.message}</S.TitleCard>
+        </S.MainWrapper>
+      </>
     );
 
   return (
@@ -43,6 +48,7 @@ export const CharacterScreen = () => {
       <S.Title>{data.character.name}</S.Title>
       <S.MainWrapper>
         <S.ImgWrapper src={data.character.image} alt={data.character.name} />
+        <S.TitleCard>Episodios</S.TitleCard>
         {data.character.episode.map(({ name }) => (
           <S.EpisodeInformation key={name}>{name}</S.EpisodeInformation>
         ))}
