@@ -6,7 +6,7 @@ import * as S from "./style"
 
 const CHARACTERS = gql`
   query {
-    characters(page: 2) {
+    characters{
       results {
         id
         name
@@ -25,7 +25,7 @@ export const ListCharacters = () => {
   if (error) return <S.TitleCard>Error: {error.message}</S.TitleCard>;
 
   return data.characters.results.map( character => (
-    <S.ListWrapper>
+    <S.ListWrapper key={character.id}>
       <CardCharacter key={character.id} { ...character } />
     </S.ListWrapper>
   ));
