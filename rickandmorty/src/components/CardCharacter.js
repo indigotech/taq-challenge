@@ -1,15 +1,15 @@
 import React from "react";
 
+import * as S from "./style";
+
 export const CardCharacter = ({ name, status, image }) => {
   return (
-    <div>
-      <div>
-        <img src={image} alt={name} />
-      </div>
-      <div>
-        <p>{name}</p>
-        <p>{status}</p>
-      </div>
-    </div>
+    <S.CardWrapper>
+        <S.ImgWrapper src={image} alt={name} />
+      <S.InformationWrapper>
+        <S.TitleCard>{name}</S.TitleCard>
+        <S.StatusCard>{status}</S.StatusCard>
+      </S.InformationWrapper>
+    </S.CardWrapper>
   );
 };

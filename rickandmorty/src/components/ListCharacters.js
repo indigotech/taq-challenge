@@ -2,6 +2,8 @@ import React from "react";
 import { gql, useQuery } from "@apollo/client";
 import { CardCharacter } from "./CardCharacter";
 
+import * as S from "./style"
+
 const CHARACTERS = gql`
   query {
     characters(page: 2) {
@@ -18,14 +20,14 @@ const CHARACTERS = gql`
 export const ListCharacters = () => {
   const { loading, error, data } = useQuery(CHARACTERS);
   
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <S.TitleCard>Loading...</S.TitleCard>;
   
-  if (error) return <p>Error: {error.message}</p>;
+  if (error) return <S.TitleCard>Error: {error.message}</S.TitleCard>;
 
   return data.characters.results.map( character => (
-
+    <S.ListWrapper>
       <CardCharacter key={character.id} { ...character } />
-
+    </S.ListWrapper>
   ));
 };
 
