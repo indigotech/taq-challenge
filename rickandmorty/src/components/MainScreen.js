@@ -7,9 +7,7 @@ export const MainScreen = () => {
   return (
     <>
       <S.MainWrapper>
-        <S.Title>
-          The Rick and Morty
-        </S.Title>
+        <S.Title>The Rick and Morty</S.Title>
         <S.ListWrapper>
           <ListCharacters />
         </S.ListWrapper>
