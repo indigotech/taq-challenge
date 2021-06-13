@@ -1,20 +1,32 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-// importar as paginas
+import CharacterList from "../pages/CharacterList";
+import CharacterDetail from "../pages/CharacterDetail";
+import ErrorPage from "../pages/ErrorPage"
 
 const Router = () => {
+    return(
 <BrowserRouter>
 <Switch>
+    <Route exact path="/">
+        <CharacterList/>
+    </Route>
+
     <Route exact path="/:page">
-        <div>pagina inicial e próximas</div>
+        <CharacterList/>
     </Route>
+
     <Route exact path="/character/:id">
-        <div>pagina do personagem</div>
+        <CharacterDetail/>
     </Route>
+
     <Route>
-        <div>pagina de erro</div>
+        {/* <ErrorPage/> */}
+        <div>erro</div>
     </Route>
+
 </Switch>
 </BrowserRouter>
-}
+);
+};
 export default Router;

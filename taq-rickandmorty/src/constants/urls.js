@@ -1,1 +1,1 @@
-export const URL_BASE = "https://rickandmortyapi.com/graphql"
+export const BASE_URL = "https://rickandmortyapi.com/graphql"

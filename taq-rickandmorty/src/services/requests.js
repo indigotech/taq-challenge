@@ -1,14 +1,14 @@
 import {BASE_URL} from "../constants/urls"
+import axios from "axios"
 
 export const getCharacterList = (changePage, setInfo, setResults) =>{
-    if(changePage===""){
+    if(!changePage){
         changePage=1
     }
     const body ={
       query: `query {
         characters(page:${changePage}){
           info{
-          pages
           next 
           prev
           }

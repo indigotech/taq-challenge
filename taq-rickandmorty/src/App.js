@@ -1,11 +1,12 @@
-import './App.css';
+import { AppDiv, GlobalStyle } from "./styled";
 import Router from "./routes/Router"
 //importar styled global
 function App() {
   return (
-    <div className="App">
+    <AppDiv>
+      <GlobalStyle/>
       <Router />
-    </div>
+    </AppDiv>
   );
 }
 
