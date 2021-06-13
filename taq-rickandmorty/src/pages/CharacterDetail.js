@@ -1,15 +1,27 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { useHistory, useParams } from "react-router-dom";
 import { getCharacterDetail} from "../services/requests"
-import { goToPage } from "../routes/coordinator";
+import Header from "../components/Header/Header";
+import Detalhes from "../components/Detalhes/Detalhes";
 import {ContainerDiv, ContainerButtons} from "./styled"
 
-
-import Header from "../components/Header/Header";
 function CharacterDetail() {
+  const [name, setName] =useState("")
+  const [image, setImage] =useState("")
+  const [episode, setEpisode] =useState([])
+  const params = useParams().id
+  const history = useHistory()
+  useEffect(() => {
+    getCharacterDetail(params, setName, setImage, setEpisode)
+  }, []);
+    const results={id:params, name:name, image:image}
     return (
       <ContainerDiv>
         <Header/>
+        <ContainerButtons>
+        <button onClick={history.goBack}>Voltar</button>
+        </ContainerButtons>
+        <Detalhes results={results} episodes={episode} />
       </ContainerDiv>
     );
   }
