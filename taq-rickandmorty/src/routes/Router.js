@@ -12,7 +12,7 @@ const Router = () => {
         <CharacterList/>
     </Route>
 
-    <Route exact path="/:page">
+    <Route exact path="/page/:page">
         <CharacterList/>
     </Route>
 

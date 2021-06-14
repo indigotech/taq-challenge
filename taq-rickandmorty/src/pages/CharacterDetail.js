@@ -12,7 +12,7 @@ function CharacterDetail() {
   const params = useParams().id
   const history = useHistory()
   useEffect(() => {
-    getCharacterDetail(params, setName, setImage, setEpisode)
+    getCharacterDetail(params, setName, setImage, setEpisode, history)
   }, []);
     const results={id:params, name:name, image:image}
     return (

@@ -1,7 +1,7 @@
 import {BASE_URL} from "../constants/urls"
 import axios from "axios"
 
-export const getCharacterList = (changePage, setInfo, setResults) =>{
+export const getCharacterList = (changePage, setInfo, setResults, history) =>{
     if(!changePage){
         changePage=1
     }
@@ -28,11 +28,11 @@ export const getCharacterList = (changePage, setInfo, setResults) =>{
         setResults(results)
     })
     .catch((err)=>{
-alert(err)
+      history.push("/error")
     })
   }
 
-  export const getCharacterDetail = (id, setName, setImage, setEpisode) =>{
+  export const getCharacterDetail = (id, setName, setImage, setEpisode, history) =>{
 
     const body ={
       query: `query {
@@ -51,6 +51,6 @@ alert(err)
         setEpisode(episode)
     })
     .catch((err)=>{
-        alert(err)
+      history.push("/error")
     })
   }
