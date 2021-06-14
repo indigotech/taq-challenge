@@ -19,9 +19,12 @@ export const GlobalStyle = createGlobalStyle`
 html, #root {
     max-width: 100vw;
     min-height: 100vh;
+
 }
 body {
     width: 100%;
     height: 100%;
+    background-color: aliceblue;
+
 }
 `

@@ -20,7 +20,6 @@ display: flex;
 align-self: center;
 flex-wrap: wrap;
 justify-content: center;
-background-color: aliceblue;
 max-width: 1200px;
 padding-left: 1rem;
 margin: 0 8rem;

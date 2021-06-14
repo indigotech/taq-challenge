@@ -4,7 +4,7 @@ import { getCharacterList} from "../services/requests"
 import { goToPage } from "../routes/coordinator";
 import Header from "../components/Header/Header";
 import Card from "../components/Card/Card";
-import {ContainerDiv, ContainerButtons} from "./styled"
+import {ContainerDiv, ContainerButtons, Button} from "./styled"
 
 function CharacterList() {
     const history=useHistory();
@@ -21,8 +21,8 @@ function CharacterList() {
       <ContainerDiv>
         <Header />
         <ContainerButtons>
-        {info && info.prev && <button onClick={()=>goToPage(history,`/${info.prev}`)} >Página Anterior</button>}
-        {info && info.next && <button onClick={()=>goToPage(history,`/${info.next}`)}>Próxima Página</button>}
+        {info && info.prev && <Button onClick={()=>goToPage(history,`/${info.prev}`)} >Página Anterior</Button>}
+        {info && info.next && <Button onClick={()=>goToPage(history,`/${info.next}`)}>Próxima Página</Button>}
         </ContainerButtons>
         {results.length>0 && <Card results={results} />}
         {!results.length>0 && <div><h2>Loading</h2></div>}

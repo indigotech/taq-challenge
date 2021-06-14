@@ -1,11 +1,7 @@
 import React from "react"
-import { useHistory} from "react-router-dom";
-
 import {ContainerDetalhesDiv, CardDiv } from "./styled"
-import {goToPage} from "../../routes/coordinator"
 
 const Detalhes = (props) => {
-  const history=useHistory()
   const {image, name} = props.results
     return(
         <ContainerDetalhesDiv>

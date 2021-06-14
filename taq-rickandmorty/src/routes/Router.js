@@ -21,8 +21,7 @@ const Router = () => {
     </Route>
 
     <Route>
-        {/* <ErrorPage/> */}
-        <div>erro</div>
+        <ErrorPage/>
     </Route>
 
 </Switch>

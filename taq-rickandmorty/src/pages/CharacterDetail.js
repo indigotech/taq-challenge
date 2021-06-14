@@ -3,7 +3,7 @@ import { useHistory, useParams } from "react-router-dom";
 import { getCharacterDetail} from "../services/requests"
 import Header from "../components/Header/Header";
 import Detalhes from "../components/Detalhes/Detalhes";
-import {ContainerDiv, ContainerButtons} from "./styled"
+import {ContainerDiv, ContainerButtons, Button} from "./styled"
 
 function CharacterDetail() {
   const [name, setName] =useState("")
@@ -19,7 +19,7 @@ function CharacterDetail() {
       <ContainerDiv>
         <Header/>
         <ContainerButtons>
-        <button onClick={history.goBack}>Voltar</button>
+        <Button onClick={history.goBack}>Voltar</Button>
         </ContainerButtons>
         <Detalhes results={results} episodes={episode} />
       </ContainerDiv>
