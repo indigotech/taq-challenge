@@ -11,6 +11,8 @@ function CharacterDetail() {
   const [episode, setEpisode] =useState([])
   const params = useParams().id
   const history = useHistory()
+
+
   useEffect(() => {
     getCharacterDetail(params, setName, setImage, setEpisode, history)
   }, []);
