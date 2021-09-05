@@ -1,13 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Home from './screens/Home';
 
 function App() {
   return (
-    <div>
-      <header>
-        <h1>Ricky and Morty</h1>
-      </header>
-    </div>
+    <Home />
   );
 }
 
