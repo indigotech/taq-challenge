@@ -67,7 +67,7 @@ function Details(props){
 
   return(
     // verifying if the page is in loading
-    // used a ternary if to show the right color for character status
+    // used a ternary if to show the set the right tag prop for character status
     isLoading ? <Preloader /> : (
       <DetailsContainer>
         <BackContainer onClick={handleClick}>
