@@ -22,6 +22,7 @@ export const HeadContent = styled.div`
 
 `;
 
+// used props to set the right color for character status using props
 export const Status = styled.p`
   padding: .2em .8em .2em .8em;
   width: fit-content;
