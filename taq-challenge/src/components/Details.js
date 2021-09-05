@@ -13,18 +13,22 @@ import Preloader from "../components/Preloader";
 
 
 function Details(props){
+  // states to put character details, and to show load component, respectively
   const [details, setDetails] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
+  // Setting the client for graphql requests
   const client = new ApolloClient({
     uri: 'https://rickandmortyapi.com/graphql',
     cache: new InMemoryCache()
   });
 
+  // useEffect just to force initialize query only when the page first load
   useEffect(() => {
     character();
   });
 
+  // Query for get character details, setting the id by props
   const character = async () => {
     client.query({
       query: gql`
@@ -40,20 +44,30 @@ function Details(props){
         }
       `
     }).then(response => {
+      // setting the response on characters state
       setDetails(response.data.character);
+
+      // turn off the loader because the query returned all characters
       setIsLoading(false)
     }).catch(error => {
       console.error(error)
+
+      // turn off the loader because the query returned error
       setIsLoading(false)
+
+      // using toast to show user that an error occured
       toast.error('Cannot get character details, try again later!')
     });
   }
 
+  // handle for render the home page on onClick action
   const handleClick = (e) => {
     props.changeScreen('home')
   };
 
   return(
+    // verifying if the page is in loading
+    // used a ternary if to show the right color for character status
     isLoading ? <Preloader /> : (
       <DetailsContainer>
         <BackContainer onClick={handleClick}>
