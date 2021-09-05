@@ -6,61 +6,17 @@ import {
 } from "@apollo/client";
 import toast from "react-hot-toast";
 
-import styled, { css } from 'styled-components';
 import Details from "../components/Details";
-
-const Card = styled.div`
-  background: white;
-  width: 400px;
-  border-radius: 15px;
-  cursor: pointer;
-  margin: 1em;
-  border: none;
-  padding: 1em;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  box-shadow: 0px -1px 9px -1px rgba(105,105,105,0.74);
-  -webkit-box-shadow: 0px -1px 9px -1px rgba(105,105,105,0.74);
-  -moz-box-shadow: 0px -1px 9px -1px rgba(105,105,105,0.74);
-
-  &:hover{
-    box-shadow: 0px -1px 21px 1px rgba(151,206,76,0.79);
-    -webkit-box-shadow: 0px -1px 21px 1px rgba(151,206,76,0.79);
-    -moz-box-shadow: 0px -1px 21px 1px rgba(151,206,76,0.79);
-  }
-
-  ${props => props.primary && css`
-    background: palevioletred;
-    color: white;
-  `}
-`;
-
-const Image = styled.img`
-  grid-area: 1 / 1 / 2 / 2;
-  width: 100px;
-  border-radius: 50%;
-  padding: 1em
-`;
-
-const Content = styled.div`
-  grid-area: 1 / 2 / 2 / 3;
-`;
-
-const Container = styled.div`
-  display: inline-flex;
-  justify-content: center;
-  padding: 2em;
-  flex-flow: wrap;
-  padding: 2em;
-`;
+import Navbar from '../components/header/Header';
+import Preloader from "../components/Preloader";
+import { Card, Image, Container, Content } from "../styles/Home-style";
+import { Status } from "../styles/Details-style";
 
 function Home(){
   const [characters, setCharacters] = useState([]);
   const [screen, setScreen] = useState('home');
   const [selected, setSelected] = useState();
+  const [isLoading, setIsLoading] = useState(true);
 
   const client = new ApolloClient({
     uri: 'https://rickandmortyapi.com/graphql',
@@ -83,9 +39,11 @@ function Home(){
       `
     }).then(response => {
       setCharacters([...response.data.characters.results]);
+      setIsLoading(false)
     }).catch(error => {
       console.error(error)
       toast.error('Cannot get all characters, try again later!')
+      setIsLoading(false)
     });
   }
 
@@ -99,22 +57,30 @@ function Home(){
   };
 
   return(
-    <Container>
-      {screen === 'home' &&
-        characters && characters.map((character, index) => (
-          <Card key={index} onClick={() => handleDetails(character)}>
-            <Image alt={character.name} src={character.image} />
-            <Content>
-              <h2>{character.name}</h2>
-              <p>{character.status}</p>
-            </Content>
-          </Card>
-        ))
-      }
-      {screen === 'details' &&
-        <Details id={selected} changeScreen={setScreen}/>
-      }
-    </Container>
+    isLoading ? <Preloader /> : (
+      <span>
+        <Navbar />
+        <Container>
+          {screen === 'home' &&
+            characters && characters.map((character, index) => (
+              <Card key={index} onClick={() => handleDetails(character)}>
+                <Image alt={character.name} src={character.image} />
+                <Content>
+                  <h2>{character.name}</h2>
+                  {character.status === 'Alive' ?
+                  <Status primary>{character.status}</Status>
+                  : (character.status === 'Dead' ? <Status secondary>{character.status}</Status> : <Status>{character.status}</Status>)
+                }
+                </Content>
+              </Card>
+            ))
+          }
+        </Container>
+        {screen === 'details' &&
+          <Details id={selected} changeScreen={setScreen}/>
+        }
+      </span>
+    )
   );
 }
 
