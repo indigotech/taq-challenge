@@ -13,7 +13,7 @@ import { Card, Image, Container, Content } from "../styles/Home-style";
 import { Status } from "../styles/Details-style";
 
 function Home(){
-  // states to put characters, to set the right template, to get the selected character and to show do load component, respectively 
+  // states to put characters, to set the right template, to get the selected character and to show load component, respectively 
   const [characters, setCharacters] = useState([]);
   const [screen, setScreen] = useState('home');
   const [selected, setSelected] = useState();
