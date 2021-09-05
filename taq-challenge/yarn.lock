@@ -9210,6 +9210,11 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
+react-awesome-spinners@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/react-awesome-spinners/-/react-awesome-spinners-1.3.1.tgz#b5e6df3a039faec3727e74e231f4f98d224ad78d"
+  integrity sha512-O44zwdMlpXP8Ty8AvFNvl0ABgIOcyiwqZlf3XkdmK2uhn8q/I8ozfJvWADl/i5PsjwaRdpmhaodCc32ZyH1icw==
+
 react-dev-utils@^11.0.3:
   version "11.0.4"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-11.0.4.tgz#a7ccb60257a1ca2e0efe7a83e38e6700d17aa37a"
@@ -9260,6 +9265,11 @@ react-hot-toast@^2.1.1:
   integrity sha512-Odrp4wue0fHh0pOfZt5H+9nWCMtqs3wdlFSzZPp7qsxfzmbE26QmGWIh6hG43CukiPeOjA8WQhBJU8JwtWvWbQ==
   dependencies:
     goober "^2.0.35"
+
+react-icons@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.2.0.tgz#6dda80c8a8f338ff96a1851424d63083282630d0"
+  integrity sha512-rmzEDFt+AVXRzD7zDE21gcxyBizD/3NqjbX6cmViAgdqfJ2UiLer8927/QhhrXQV7dEj/1EGuOTPp7JnLYVJKQ==
 
 react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
