@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import img2 from '../../assets/space3.jpeg'
 
 export const ContainerCards = styled.div`
     max-width: 1400px;
@@ -13,6 +14,10 @@ export const ContainerCards = styled.div`
     padding: 2em;
     flex-flow: wrap;
     padding: 2em;
+
+    background-image: url(${img2});
+    background-repeat: no-repeat;
+    background-size : cover;
 
     /* @media screen and (max-width: 860px) {
         &{
