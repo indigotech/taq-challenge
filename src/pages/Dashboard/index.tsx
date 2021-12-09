@@ -57,7 +57,6 @@ const Dashboard: React.FC =  () => {
     const find_character = Data.find(elem => elem.id === event.id)
 
     if(find_character){
-      localStorage.setItem("AppRickMorty", JSON.stringify(find_character))
       window.location.pathname = `/details/:${event.id}`
     }
   }
