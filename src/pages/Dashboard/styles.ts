@@ -1,31 +1,31 @@
 import styled from "styled-components";
-import img2 from '../../assets/space3.jpeg'
+
+export const DashboardPage = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+`
 
 export const ContainerCards = styled.div`
     max-width: 1400px;
 
-    height: auto;
-    margin: 0 auto;
-    padding: 36px 16px;
-    border: 1px solid greenyellow;
+    height: 100%;
+    margin: auto auto;
+    padding: 15px 8px;
 
     display: inline-flex;
     justify-content: center;
-    padding: 2em;
     flex-flow: wrap;
-    padding: 2em;
 
-    background-image: url(${img2});
-    background-repeat: no-repeat;
-    background-size : cover;
 
-    /* @media screen and (max-width: 860px) {
+    @media screen and (max-width: 768px) {
         &{
             width: 100%;
-            display: block;
-            margin-bottom: 20px;
-            height: auto;
+            background-repeat: repeat-y;
         }
-    } */
+    }
 
 `;

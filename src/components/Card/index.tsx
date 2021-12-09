@@ -12,7 +12,7 @@ type Props = {
 
 const Card: React.FC<Props> = ({onClick, id ,info}: Props) => {
   return (
-    <Container onClick = {onClick} id = {id}>
+    <Container onClick = {onClick} id = {id} status = {info.status}>
       <Image src={info.image} alt="img" />
       <Content>
         <h2>{info.name}</h2>

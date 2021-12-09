@@ -1,42 +1,36 @@
 import styled from 'styled-components'
 
-import img from '../../assets/space2.jpeg'
+
 export const ContentPage = styled.div `
     width: 100%;
     height: 100%;
-    justify-content: center;
     display: flex;
-    background-image: url(${img});
-    background-repeat: repeat-y;
-    
-    
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
 
     @media screen and (max-width: 768px) {
         &{
             width: 100%;
-            height: 100%;
-            /* overflow-x: hidden !important;
-            overflow-y: hidden !important; */
+            height: 100vh;
             background-repeat: repeat-y;
         }
     }
 `;
 
 export const CardContainer = styled.div `
-    background: #333;
-    width: 50%;
-    height: auto;
+    width: 30%;
+    height: 30%;
     margin: 5% auto 0 auto;
-    /* display: flex; */
-
     border-radius: 9px;
     justify-content: center;
-    background-color: #C0C0C0;
+    background-color:rgba(192, 192, 192, 0.7);
+
 
     @media screen and (max-width: 768px) {
         &{
             width: 80%;  
-            height: 100%;      
+            height: 78%;      
             justify-content: center;
 
         }
@@ -71,21 +65,33 @@ export const TextDiv = styled.div `
     justify-content: center;
     text-align: center;
     color: black;
+
+    .episodes {
+        font-size: 17px;
+    }
+
+    h2{
+        margin: 4px 0;
+    }
     
     li{
-        text-align: left;
-        list-style-type: none;
-        margin-top: 3px;
-        padding: 1px;        
+
+        padding: 3px;      
+        width: 40px;
+        text-align: center;
+        background-color: #63eb78;
         /* border: 1px solid black; */
         transition: 0.3s;
 
         &:hover{
-            transform: translateX(10px);
-            color: white;
+            /* transform: translateX(10px); */
+            /* color: white; */
             /* cursor: pointer; */
+            opacity: 0.5;
         }
     }
+
+    
 `
 
 

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import img2 from '../assets/space3.jpeg'
 
 
 export default createGlobalStyle`
@@ -13,6 +14,9 @@ export default createGlobalStyle`
         background: #312E38;
         color: #FFF;
         -webkit-font-smoothing: antialiased;
+        background-image: url(${img2});
+        background-repeat: no-repeat;
+        background-size : cover;
 
     }
 

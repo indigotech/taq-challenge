@@ -8,6 +8,8 @@ import {
 } from "@apollo/client";
 
 import {ContentPage, CardContainer, ImageDiv,TextDiv, ButtonBack} from './styles'
+import {PaginatedList} from 'react-paginated-list'
+import {ClipLoader} from "react-spinners";
 
 interface DtoEpisode{
   name: string
@@ -41,11 +43,12 @@ const Dashboard: React.FC = () => {
           }
         `
       })
-      // debugger;
+
       setInfo(response.data.character)
       setisLoading(false);
       
     } catch (error) {
+      alert("Ocurred an error: cannot get information this character")
       console.error(error)
     }
     }, [])
@@ -57,8 +60,15 @@ const Dashboard: React.FC = () => {
 
   useEffect(() => {
   }, [isLoading])
+
+  function HandleClickBack() {
+    window.history.back();
+  }
+
+
   return (
     <ContentPage>
+    <ClipLoader color={"#ffffff"} loading={isLoading}  size={150} />
       {
         !isLoading &&
         <CardContainer>
@@ -67,16 +77,25 @@ const Dashboard: React.FC = () => {
           </ImageDiv>
           <TextDiv>
             <h1>{info?.name}</h1>
-            <h2>Episodes</h2>
-            <ul>
-              {
-                !isLoading && info?.episode.map((elem: DtoEpisode, index) => (
-                  <li key = {index}>{elem.name}</li>
-                ))
-              }
-            </ul>
+            <h2>Episodes</h2>           
+
+        <PaginatedList
+            list={info!.episode}
+            itemsPerPage={3}
+            renderList={(list) => (
+              <>
+                {list.map((item, id) => {
+                  return (
+                    <div className = "episodes" key={id}>
+                      {item.name}
+                    </div>
+                  );
+                })}
+              </>
+            )}
+          />
           </TextDiv>
-          <ButtonBack><FiArrowLeft size= {35}/></ButtonBack>
+          <ButtonBack onClick = {HandleClickBack}><FiArrowLeft size= {35}/></ButtonBack>
           
         </CardContainer>
       }

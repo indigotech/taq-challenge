@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from 'react';
+import React, { useState , useEffect, useCallback } from 'react';
 
 import {
   gql
@@ -6,7 +6,8 @@ import {
 
 import {client} from '../../services/api' 
 import Card from '../../components/Card';
-import {ContainerCards} from './styles'
+import {ContainerCards, DashboardPage} from './styles';
+import {ClipLoader} from "react-spinners";
 
 export interface DtoCaracter {
   id: string,
@@ -17,15 +18,13 @@ export interface DtoCaracter {
 
 const Dashboard: React.FC =  () => {
   const [Data , setData] = useState<DtoCaracter[]>([]);
-  const [isLoadig , setisLoadig] = useState<boolean>(true);
+  const [isLoading , setisLoading] = useState<boolean>(true);
 
-
-  // Query for get all characters
-  const LoadData = async () => {
+  const LoadData = useCallback( async() => {
     try {
       const response= await client.query({
         query: gql`
-          query {
+          query{
             characters {
               results {
                 id
@@ -39,12 +38,19 @@ const Dashboard: React.FC =  () => {
       })
 
       setData([...response.data.characters.results]);
-      setisLoadig(false)
+      setisLoading(false)
       
     } catch (error) {
+      alert("Ocurred an error: cannot get all characters")
       console.error(error)
     }
   }
+  ,[]);
+  
+  useEffect(() => {
+    LoadData()
+  }, [LoadData])
+  
 
   function HandleClickCard(event : any){
 
@@ -56,21 +62,23 @@ const Dashboard: React.FC =  () => {
     }
   }
 
-  useEffect(() => {
-    LoadData()
-  }, [])
 
   useEffect(() => {
-  }, [isLoadig])
+  }, [isLoading])
   return (
-    <ContainerCards>
+    <DashboardPage>
+    <ClipLoader key = "loader" color={"#ffffff"} loading={isLoading}  size={120} />
+    
+    { !isLoading && <ContainerCards>
       { 
-        !isLoadig && Data.map((elem: DtoCaracter) => (
-            <Card key= {elem.id} id = {elem.id} info = {elem} onClick = {(e) => HandleClickCard(e.currentTarget)} />
+        !isLoading && Data.map((elem: DtoCaracter) => (
+            <Card key= {elem.id} id = {elem.id}  info = {elem} onClick = {(e) => HandleClickCard(e.currentTarget)} />
           ))  
       }
 
     </ContainerCards>
+    }
+    </DashboardPage>
   );
 };
 
