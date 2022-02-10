@@ -53,7 +53,7 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 - A API pode retornar erro. Seu código deverá tratar de forma amigável tais exceções. Exemplo: timeout, problemas de conexão, erro de rota, etc.
 - Esperamos que seu código seja limpo, fácil de ser compreendido e testado. Comente seu código mas lembre-se que excesso de comentários também é fonte de poluição.
 - Se você considerar este desafio muito complexo ou se sente travado, sinta-se à vontade em pedir nossa ajuda. Preferimos candidatos que atinjam seu objetivo, mesmo com auxílio, do que simplesmente desistir.
-- Realizaremos o pull de seu branch. Para rodar o sistema, executaremos dois comandos em sequência:
+- Realizaremos o clone de seu repositório. Para rodar o sistema, executaremos dois comandos em sequência:
   - `yarn install`
   - `yarn start`
   - O sistema deverá ser executado sem nenhum erro no console ou terminal.
@@ -74,4 +74,4 @@ Não há uma regra para isto. Apenas tenha em mente que esta separação deve se
 
 ### Eu preciso fazer o deploy da resposta?
 
-Não. A sua branch deve ser enviada através de um pull request e deverá rodar através do comando `yarn start` sem erros.
+Não. A sua resolução deverá ser enviada por e-mail e deverá rodar através do comando `yarn start` sem erros.
