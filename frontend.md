@@ -43,7 +43,7 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 - Utilização de conceitos de atomic design.
 - Comportamento adequado do botão "back" do browser ao voltar do detalhe para a listagem.
 
-**Importante:** de tentar contemplar os itens de bônus, tenha em mente que não estamos avaliando a perfeição, e sim o equilíbrio entre objetivo principal, esforço esperado (12~16h) e a compreensão de conceitos. Os itens desta seção devem ser utilizados para facilitar o desenvolvimento e não trazer mais complexidade ao desafio.
+**Importante:** Ao tentar contemplar os itens de bônus, tenha em mente que não estamos avaliando a perfeição, e sim o equilíbrio entre objetivo principal, esforço esperado (12~16h) e a compreensão de conceitos. Os itens desta seção devem ser utilizados para facilitar o desenvolvimento e não trazer mais complexidade ao desafio.
 
 # Critérios de avaliação
 
@@ -54,8 +54,8 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 - Esperamos que seu código seja limpo, fácil de ser compreendido e testado. Comente seu código mas lembre-se que excesso de comentários também é fonte de poluição.
 - Se você considerar este desafio muito complexo ou se sente travado, sinta-se à vontade em pedir nossa ajuda. Preferimos candidatos que atinjam seu objetivo, mesmo com auxílio, do que simplesmente desistir.
 - Realizaremos o clone de seu repositório. Para rodar o sistema, executaremos dois comandos em sequência:
-  - `yarn install`
-  - `yarn start`
+  - `npm install`
+  - `npm start`
   - O sistema deverá ser executado sem nenhum erro no console ou terminal.
 
 # FAQ
@@ -74,4 +74,4 @@ Não há uma regra para isto. Apenas tenha em mente que esta separação deve se
 
 ### Eu preciso fazer o deploy da resposta?
 
-Não. A sua resolução deverá ser enviada por e-mail e deverá rodar através do comando `yarn start` sem erros.
+Não. A sua resolução deverá ser enviada por e-mail e deverá rodar através do comando `npm start` sem erros.

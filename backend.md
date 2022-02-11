@@ -45,6 +45,10 @@ OBS: Desconsidere paradoxos temporais fora do escopo do projeto.
 
 # FAQ
 
+### Posso usar Nest.js ou outros frameworks?
+
+Não, para esse desafio queremos também avaliar a arquitetura da solução, então pedimos que só utilize algum frameworks minimalistas como express, Koa, fastify, ou similar
+
 ## Posso utilizar Typescript para escrever meu código?
 
 Sim.
