@@ -5,6 +5,7 @@
 O desafio é criar uma API Rest ou Graphql em Node.js para uma aplicação de Sistema de Fiscalização de Viajantes do tempo em que ficais podem cadastrar viajantes e infrações, e validar viagens.
 
 A aplicação deverá permitir:
+
 - Cadastro de viajante no tempo com nome, data de nascimento e número de passaporte de viajante;
 - Cadastro de infração de um viajante com descrição da infração, o número do passaporte, data e hora em que a infração foi cometida e gravidade;
 - Consulta de detalhes de viajante por número de passaporte;
@@ -12,17 +13,19 @@ A aplicação deverá permitir:
 - Verificar se um viajante pode realizar viagens em um dado período temporal.
 
 Toda infração no espaço-tempo pode ter as seguintes gravidades e pontos:
+
 - Baixa: 3 pontos
 - Média: 5 pontos
 - Grave: 7 pontos
 - Gravíssima: 12 pontos
 
 Para verificar se um viajante pode viajar para um dado período, existem as seguintes regras:
+
 - Por questões de segurança do espaço-tempo o viajante não pode viajar para antes de seu nascimento;
 - O viajante não pode viajar se houver mais de 12 pontos de infações nos ultimos 12 meses (considerando a data UTC atual);
 - O viajante não pode viajar se tiver cometido qualquer tipo de infração um ano antes ou depois do período desejado.
 
-O desafio deverá ser entregue num repositório privado no Github e deverá chamar como colaboradores os usuários: `BrunoPardo3596`, `felipewaku`, `LeonardoFassini` e `walteraandrade`
+O desafio deverá ser entregue num repositório privado no Github e deverá chamar como colaboradores os usuários: `felipewaku`, `LeonardoFassini` e `Mitsuo-Yoshida`.
 
 OBS: Para todas as operações temporais, considere UTC.
 
@@ -57,6 +60,10 @@ Sim.
 
 Não há uma regra para isto. Apenas tenha em mente que esta separação deve seguir alguma regra consistente.
 
-## Eu preciso fazer o deploy da resposta?
+### Eu preciso fazer o deploy da resposta? Como eu envio ela?
 
-Não. A sua resolução deve ser enviada através do e-mail e deverá rodar através do comando `npm start` sem erros.
+Não. Ao fim do prazo estipulado ou quando acreditar que o desafio está completo e deseja que ele seja avaliado, você deverá enviar um e-mail para algum dos entrevistadores (preferencialmente para <carreiras@taqtile.com.br>) notificando que finalizou o desafio. Após a data desse e-mail, nenhuma outra modificação posterior será avaliada.
+
+### Para a funcionalidade <feature>, devo fazer do modo X ou Y?
+
+Você tem a liberdade de desenvolver da forma que preferir, seja adicionando conceitos ou bibliotecas, desde que saiba justificar as decisões e que o comportamento seja consistente, seguindo as regras acima.
