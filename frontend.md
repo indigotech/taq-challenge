@@ -2,14 +2,14 @@
 
 # O desafio
 
-A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graphql), conforme a seção "Instruções", com esforço estimado de 12h~16h. O prazo pode ser estendido até 1 semana a partir do fork, mas também aumentará o rigor com que o código será avaliado.
+A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graphql), conforme a seção "Instruções", com esforço estimado de 12h~16h. O prazo pode ser estendido até 1 semana a partir da criação, mas também aumentará o rigor com que o código será avaliado.
 
 **Dica:** tente atingir os objetivos básicos para depois partir para a seção bônus.
 
 # Instruções
 
 1. Crie um repositório privado na sua conta do github.
-1. Convide os membros da Taqtile como colaboradores: `BrunoPardo3596`, `felipewaku`, `LeonardoFassini` e `Mitsuo-Yoshida`.
+1. Convide os membros da Taqtile como colaboradores: `felipewaku`, `LeonardoFassini` e `Mitsuo-Yoshida`.
 1. Crie um projeto [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html#create-react-app).
 1. Consuma a API https://rickandmortyapi.com/graphql
 1. Desenvolva a listagem de personagens (em forma de lista ou cards). Como exibição padrão, a listagem deve trazer todos os personagens com as seguintes informações:
@@ -22,7 +22,7 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 
    - imagem do personagem;
    - nome do personagem;
-   - todos os episódios que o mesmo apareceu (apenas o nome).
+   - todos os episódios que ele apareceu (apenas o nome).
 
 1. A tela de detalhes deverá possuir um botão ou link para retornar a listagem.
 
@@ -57,6 +57,14 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
   - `npm install`
   - `npm start`
   - O sistema deverá ser executado sem nenhum erro no console ou terminal.
+- Os critérios de avaliação usados serão, mas não limitados a:
+  - Clareza
+  - Divisão de responsabilidades
+  - Legibilidade
+  - Funcionamento
+  - Otimização
+  - Completude do desafio
+  - Manutenibilidade
 
 # FAQ
 
@@ -72,6 +80,10 @@ Sim.
 
 Não há uma regra para isto. Apenas tenha em mente que esta separação deve seguir alguma regra consistente.
 
-### Eu preciso fazer o deploy da resposta?
+### Eu preciso fazer o deploy da resposta? Como eu envio ela?
 
-Não. A sua resolução deverá ser enviada por e-mail e deverá rodar através do comando `npm start` sem erros.
+Não. Ao fim do prazo estipulado ou quando acreditar que o desafio está completo e deseja que ele seja avaliado, você deverá enviar um e-mail para algum dos entrevistadores (preferencialmente para <carreiras@taqtile.com.br>) notificando que finalizou o desafio. Após a data desse e-mail, nenhuma outra modificação posterior será avaliada.
+
+### Para a funcionalidade <feature>, devo fazer do modo X ou Y?
+
+Você tem a liberdade de desenvolver da forma que preferir, seja adicionando conceitos ou bibliotecas, desde que saiba justificar as decisões e que o comportamento seja consistente, seguindo as regras acima.
