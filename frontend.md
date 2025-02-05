@@ -10,7 +10,7 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 
 1. Crie um repositório privado na sua conta do github.
 1. Convide os membros da Taqtile como colaboradores: `felipewaku`, `LeonardoFassini`, `Mitsuo-Yoshida` e `fe-jcorreia`.
-1. Crie um projeto [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html#create-react-app).
+1. Crie um projeto [React](https://create-react-app.dev/docs/getting-started).
 1. Consuma a API https://rickandmortyapi.com/graphql
 1. Desenvolva a listagem de personagens (em forma de lista ou cards). Como exibição padrão, a listagem deve trazer todos os personagens com as seguintes informações:
 
@@ -38,7 +38,7 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 
 # Bônus
 
-- Utilização do `styled-components`.
+- Utilização do `tailwindcss`.
 - Demonstrar algum comportamento responsivo (desktop vs. mobile) com apenas um breaking point: 768px.
 - Utilização de conceitos de atomic design.
 - Comportamento adequado do botão "back" do browser ao voltar do detalhe para a listagem.
