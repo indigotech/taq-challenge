@@ -70,7 +70,7 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 
 ### Posso usar Next, Gatsby ou outro framework?
 
-Para este projeto, gostaríamos que utilizasse a biblioteca da forma mais limpa, ou seja, através do cli `create-react-app`.
+Para este projeto, gostaríamos que utilizasse a biblioteca da forma mais limpa, ou seja, através do cli `npx create-react-router@latest` (react-router + vite).
 
 ### Posso utilizar Typescript para escrever meu código?
 
