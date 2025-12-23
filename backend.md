@@ -4,28 +4,33 @@
 
 O desafio é criar uma API Rest ou Graphql em Node.js para uma aplicação de Sistema de Fiscalização de Viajantes do tempo em que ficais podem cadastrar viajantes e infrações, e validar viagens.
 
-A aplicação deverá permitir:
+**Dica:** tente atingir os objetivos básicos para depois partir para a seção bônus.
 
-- Cadastro de viajante no tempo com nome, data de nascimento e número de passaporte de viajante;
-- Cadastro de infração de um viajante com descrição da infração, o número do passaporte, data e hora em que a infração foi cometida e gravidade;
-- Consulta de detalhes de viajante por número de passaporte;
-- Listagem de infrações por viajante;
-- Verificar se um viajante pode realizar viagens em um dado período temporal.
+# Instruções
 
-Toda infração no espaço-tempo pode ter as seguintes gravidades e pontos:
+1. Crie um repositório privado na sua conta do github usando o padrão: `<seu-nome>-taqtile-case`.
+1. Convide os membros da Taqtile como colaboradores: `Mitsuo-Yoshida`, `henriquegeribello`, `Raquelmms`, `bia-lima`, `Japoncio3k` e `VituHonda`.
 
-- Baixa: 3 pontos
-- Média: 5 pontos
-- Grave: 7 pontos
-- Gravíssima: 12 pontos
+1. A aplicação deverá permitir:
 
-Para verificar se um viajante pode viajar para um dado período, existem as seguintes regras:
+    - Cadastro de viajante no tempo com nome, data de nascimento e número de passaporte de viajante;
+    - Cadastro de infração de um viajante com descrição da infração, o número do passaporte, data e hora em que a infração foi cometida e gravidade;
+    - Consulta de detalhes de viajante por número de passaporte;
+    - Listagem de infrações por viajante;
+    - Verificar se um viajante pode realizar viagens em um dado período temporal.
 
-- Por questões de segurança do espaço-tempo o viajante não pode viajar para antes de seu nascimento;
-- O viajante não pode viajar se houver mais de 12 pontos de infações nos ultimos 12 meses (considerando a data UTC atual);
-- O viajante não pode viajar se tiver cometido qualquer tipo de infração um ano antes ou depois do período desejado.
+1. Toda infração no espaço-tempo pode ter as seguintes gravidades e pontos:
 
-O desafio deverá ser entregue num repositório privado no Github e deverá chamar como colaboradores os usuários: `felipewaku`, `Mitsuo-Yoshida`, `henriquegeribello` e `Raquelmms`.
+    - Baixa: 3 pontos
+    - Média: 5 pontos
+    - Grave: 7 pontos
+    - Gravíssima: 12 pontos
+
+1. Para verificar se um viajante pode viajar para um dado período, existem as seguintes regras:
+
+    - Por questões de segurança do espaço-tempo o viajante não pode viajar para antes de seu nascimento;
+    - O viajante não pode viajar se houver mais de 12 pontos de infrações nos ultimos 12 meses (considerando a data UTC atual);
+    - O viajante não pode viajar se tiver cometido qualquer tipo de infração um ano antes ou depois do período desejado.
 
 OBS: Para todas as operações temporais, considere UTC.
 

@@ -8,8 +8,8 @@ A ideia é simples, você deverá desenvolver 2 telas consultando uma API (Graph
 
 # Instruções
 
-1. Crie um repositório privado na sua conta do github.
-1. Convide os membros da Taqtile como colaboradores: `felipewaku`, `Mitsuo-Yoshida`, `henriquegeribello` e `Raquelmms`.
+1. Crie um repositório privado na sua conta do github usando o padrão: `<seu-nome>-taqtile-case`.
+1. Convide os membros da Taqtile como colaboradores: `Mitsuo-Yoshida`, `henriquegeribello`, `Raquelmms`, `bia-lima`, `Japoncio3k` e `VituHonda`.
 1. Crie um projeto [React](https://create-react-app.dev/docs/getting-started).
 1. Consuma a API https://rickandmortyapi.com/graphql
 1. Desenvolva a listagem de personagens (em forma de lista ou cards). Como exibição padrão, a listagem deve trazer todos os personagens com as seguintes informações:
