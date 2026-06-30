@@ -9,7 +9,7 @@ O desafio é criar uma API Rest ou Graphql em Node.js para uma aplicação de Si
 # Instruções
 
 1. Crie um repositório privado na sua conta do github usando o padrão: `<seu-nome>-taqtile-case-back`.
-1. Convide os membros da Taqtile como colaboradores: `Mitsuo-Yoshida`, `henriquegeribello`, `Raquelmms`, `bia-lima`, `Japoncio3k` e `VituHonda`.
+1. Convide os membros da Taqtile como colaboradores: `Raquelmms`, `bia-lima`, `Japoncio3k` e `VituHonda`.
 
 1. A aplicação deverá permitir:
 
